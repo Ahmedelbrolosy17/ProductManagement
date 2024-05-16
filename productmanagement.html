@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product management</title>
+    <link rel="stylesheet" href="./productmanagement.css">
+</head>
+<body>
+    <div class="prodManage">
+        <div class="info">
+            <h1>cruds</h1>
+            <p>product management app</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="title">
+            <div class="coast">
+                <input oninput="calcTotal()" type="number" id="price" placeholder="price">
+                <input oninput="calcTotal()" type="number" id="taxes" placeholder="taxes">
+                <input oninput="calcTotal()" type="number" id="ads" placeholder="ads">
+                <input oninput="calcTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="number" id="count" placeholder="count">
+            <input type="text" id="category" placeholder="category">
+            <button id="create">create</button>
+        </div>
+        <div class="outputs">
+            <input type="text" id="search" placeholder="search">
+            <div class="choosecat">
+                please, choose a reference!
+            </div>
+            <div class="searchType">
+                <button id="sTitle">search by title</button>
+                <button id="sCategory">search by category</button>
+            </div>
+            <button id="deleteAll">delete All</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th> <th>title</th> <th>price</th> <th>taxes</th> <th>ads</th> <th>discount</th> <th>total</th>
+                        <th>category</th> <th>update</th> <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./productmanagement.js"></script>
+</body>
+</html>
